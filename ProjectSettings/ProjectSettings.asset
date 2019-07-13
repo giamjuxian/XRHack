@@ -628,7 +628,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/giam_/Desktop/XRHack/Assets/xrhack.cert
+    m_CertPath: C:/Users/zhuan/OneDrive for Business/Documents/XR Hack/Project/XRHack/xrhack.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:
