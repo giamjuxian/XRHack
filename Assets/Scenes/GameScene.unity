@@ -120,6 +120,41 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &150522401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 83020bf79b885da4fb1bb271651a9f4d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1977665407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &150522402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150522401}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.090742, y: 12.692917, z: 0.98502725}
+  m_Center: {x: 0, y: -2.7605824, z: 0.49352655}
+--- !u!54 &150522403
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150522401}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1001 &256104722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -409,6 +444,7 @@ GameObject:
   - component: {fileID: 1533598229}
   - component: {fileID: 1533598228}
   - component: {fileID: 1533598227}
+  - component: {fileID: 1533598232}
   - component: {fileID: 1533598231}
   m_Layer: 0
   m_Name: Tennis Ball
@@ -424,7 +460,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533598226}
-  m_Material: {fileID: 13400000, guid: 58737c7154c075d48ae1d3f0f2555b27, type: 2}
+  m_Material: {fileID: 13400000, guid: fe5ff3561f8ccd14bb6993f35462248a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -504,7 +540,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1533598232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533598226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d291ffe6da3f64a9ea10dfb5fa1fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 20
 --- !u!1 &1696137487
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,12 +623,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 83020bf79b885da4fb1bb271651a9f4d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 83020bf79b885da4fb1bb271651a9f4d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17364816
+      value: 0.2588191
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 83020bf79b885da4fb1bb271651a9f4d,
         type: 3}
@@ -594,7 +643,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 83020bf79b885da4fb1bb271651a9f4d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9848078
+      value: 0.9659258
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 83020bf79b885da4fb1bb271651a9f4d,
         type: 3}
@@ -604,7 +653,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 83020bf79b885da4fb1bb271651a9f4d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 83020bf79b885da4fb1bb271651a9f4d,
         type: 3}

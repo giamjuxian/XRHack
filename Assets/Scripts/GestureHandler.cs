@@ -22,7 +22,7 @@ public class GestureHandler : MonoBehaviour
         gestures[2] = MLHandKeyPose.OpenHandBack;
         gestures[3] = MLHandKeyPose.Finger;
         MLHands.KeyPoseManager.EnableKeyPoses(gestures, true, false);
-        // tennisBall.SetActive(false);
+        tennisBall.SetActive(false);
     }
 
     void OnDestroy()
@@ -30,8 +30,9 @@ public class GestureHandler : MonoBehaviour
         MLHands.Stop();
     }
 
-    void Update()
-    {
+    void FixedUpdate()
+    { 
+
         if (GetGesture(MLHands.Left, MLHandKeyPose.Fist)
         || GetGesture(MLHands.Right, MLHandKeyPose.Fist))
         {
@@ -39,11 +40,8 @@ public class GestureHandler : MonoBehaviour
             tennisBall.SetActive(true);
             tennisBall.transform.position = MLHands.Left.Index.KeyPoints[0].Position;
         }
-
-        if (GetGesture(MLHands.Left, MLHandKeyPose.Fist)
-        || GetGesture(MLHands.Right, MLHandKeyPose.Fist))
-        {
-            Debug.Log("Drop ball here");
+        else {
+            holdingBall = false;
         }
     }
 
